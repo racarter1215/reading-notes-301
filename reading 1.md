@@ -148,7 +148,29 @@
 
 ###### Each value accepts either a positive integer or keyword. For the height property the keyword device-height value is accepted, and for the width property the keyword device-width is accepted.
 
-##### 
+### Flexible Media
+
+##### Images, videos, and other media types need to be scalable, changing their size as the size of the viewport changes.
+
+###### Example: img, video, canvas {
+######   max-width: 100%;
+###### }
+
+# All About Floats
+
+### What is a Float?
+
+##### It is a CSS positioning property.
+
+##### By using Float, one can ignore the text wrap and allow words to flow right over the image like it wasn’t even there.
+
+##### Floated elements remain a part of the flow of the web page.
+
+###### Example: sidebar {
+######   float: right;			
+###### }
+
+
 
  
 
