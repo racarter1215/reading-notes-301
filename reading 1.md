@@ -98,7 +98,53 @@
 
 ### Logical Operators in Media Queries
 
-##### 
+##### The three logical operators used within media queries are and, not, and only.
+
+##### Using the "and" logical operator within a media query allows an extra condition to be added.
+
+###### Example: @media all and (min-width: 800px) and (max-width: 1024px) {...}
+
+##### The "only" logical operator is a new operator and is not recognized by user agents using the HTML4 algorithm, thus hiding the styles from devices or browsers that don’t support media queries.
+
+###### Example: @media only screen and (orientation: portrait) {...}
+
+### Media Features in Media Queries
+
+##### Media features identify what attributes or properties will be targeted within the media query expression.
+
+##### A common media features is determining a height or width for a device or browser viewport. 
+
+###### Example: @media all and (min-width: 320px) and (max-width: 780px) {...}
+
+##### Using min and max prefixes avoid any conflict with the general HTML syntax, specifically not using the < and > symbols.
+
+##### orientation media feature determines if a device is in the landscape or portrait orientation.
+
+##### The landscape mode is triggered when the display is wider than taller, and the portrait mode is triggered the opposite way.
+
+###### Example: @media all and (orientation: landscape) {...}
+
+##### The aspect-ratio and device-aspect-ratio features specifies the width/height pixel ratio of the targeted rendering area or output device. The min and max prefixes are available to use with the different aspect ratio features, identifying a ratio above or below that of which is stated.
+
+###### Example: @media all and (min-device-aspect-ratio: 16/9) {...}
+
+##### Pixel-ratio: great for identifying high definition devices, including retina displays.
+
+###### Example: @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min-device-pixel-ratio: 1.3) {...}
+
+### Mobile First
+
+##### Mobile First includes using styles targeted at smaller viewports as the default styles for a website, then use media queries to add styles as the viewport grows.
+
+###### Example: /* Default styles first then media queries */
+###### @media screen and (min-width: 400px)  {...}
+###### @media screen and (min-width: 600px)  {...}
+###### @media screen and (min-width: 1000px) {...}
+###### @media screen and (min-width: 1400px) {...}
+
+
+
+ 
 
 
 
