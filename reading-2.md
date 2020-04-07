@@ -51,4 +51,47 @@
 
 ### Getting element content
 
-##### 
+##### .html() is used to retrieve info from a jQuery selection, it retrieves only the HTML inside the FIRST element in the matched set, along with any descendants. 
+
+##### .text() is used to retreive the text from a jQuery selection, it returns the content from every element in the jQuery selection, along with the text from any descendants. 
+
+##### Updating Elements
+
+##### 4 methods that update the content of all elements in a jQuery selection: .html(), .text(), .replaceWith(), and .remove().
+
+### Changing content
+
+### Inserting ELements
+
+##### Involves two steps, create the new elements in a jQuery object and use a method to insert the content into the page.
+
+##### adding new elements can be accomplished by: .before(), .after(), .prepend(), and .append()
+
+### Getting and Setting CSS properties
+
+##### the .css() method lets you retrieve and set the values of CSS properties.
+
+##### To GET the value of a CSS property, you indicate which property you want to retrieve in parentheses. If the matched set contains more than one element, it will return the value from the first element. var backgroundColor = $('li').css('background-color');
+
+##### To SET the values of a CSS property, you specify the property name as the first argument in the parentheses, then a comma, followed by its value as the second argument. This will update every element in the matched set. You can also specify multiple properties in the same method using object literal notation. $('li').css('background-color', '#272727');
+
+##### To set a value in pixels, do: $('li').css('padding-left', '+=20');
+
+##### Working with each element in a selection: .each() allows you to perform one or more statements on each of the items in the selection of elements that is returned by a selector, like a loop. this or $(this) uses the this keyword to create a new jQuery selection containing the current element. It allows you to use jQuery methods on the current element.
+
+### Event Methods
+
+##### The .on() method is used to handle all events. Behind the scenes, jQuery handles all of the cross-browser issues you saw in the last chapter. Page 326 has list of on events
+
+# 6 Reasons for Pair Programming
+
+### While learning to code, developers likely study several programming languages. Similar to a foreign language class, there are four fundamental skills that help anyone learn a new language: Listening: hearing and interpreting the vocabulary Speaking: using the correct words to communicate an idea Reading: understanding what written language intends to convey Writing: producing from scratch a meaningful
+
+##### Pair programming touches on all four skills: developers explain out loud what the code should do, listen to others’ guidance, read code that others have written, and write code themselves.
+
+##### Greater efficiency
+##### Engaged collaboration
+##### Learning from fellow students
+##### Social skills
+##### Job interview readiness
+##### Work environment readiness
